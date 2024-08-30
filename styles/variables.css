@@ -1,1 +1,13 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --accentFont: 'PressStart2P';
+  --generalFont: 'Inter';
+  --generalFontDisplayWght: 700;
+  --generalFontTextWght: 400;
+  --generalBckgColor: #fff;
+  --accentColor: #000;
+  --mainWdth: 375px;
+  --strokeColor: #fff;
+}
+

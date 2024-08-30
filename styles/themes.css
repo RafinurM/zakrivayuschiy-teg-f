@@ -4,3 +4,56 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+/* Светлая сторона */
+
+:root.theme-light {
+  --generalBckgColor: #fff;
+  --accentColor: #000;
+  --generalFontDisplayWght: 700;
+  --generalFontTextWght: 400;
+  --gradientTheme: #d3d3d3;
+  --gradientLinearThemeStart: #e7e7e7;
+  --gradientLinearThemeEnd: #1a1a1a;
+  --strokeColor: #fff;
+}
+
+@media (prefers-color-scheme: light) {
+  /* описать тоже самое */
+  :root {
+    --generalBckgColor: #fff;
+    --accentColor: #000;
+    --generalFontDisplayWght: 700;
+    --generalFontTextWght: 400;
+    --gradientTheme: #d3d3d3;
+    --gradientLinearThemeStart: #e7e7e7;
+    --gradientLinearThemeEnd: #1a1a1a;
+    --strokeColor: #fff;
+  }
+}
+/* Тёмная сторона */
+
+:root.theme-dark {
+  --generalBckgColor: #000;
+  --accentColor: #00cc14;
+  --generalFontDisplayWght: 785;
+  --generalFontTextWght: 465;
+  --gradientTheme: #000;
+  --gradientLinearThemeStart: #007f0c;
+  --gradientLinearThemeEnd: #004306;
+  --strokeColor: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* описать тоже самое */
+  :root {
+    --generalBckgColor: #000;
+    --accentColor: #00cc14;
+    --generalFontDisplayWght: 785;
+    --generalFontTextWght: 465;
+    --gradientTheme: #000;
+    --gradientLinearThemeStart: #007f0c;
+    --gradientLinearThemeEnd: #004306;
+    --strokeColor: #000;
+  }
+}
