@@ -16,6 +16,7 @@
   --gradientLinearThemeStart: #e7e7e7;
   --gradientLinearThemeEnd: #1a1a1a;
   --strokeColor: #fff;
+  --buttonHoverColor: #fff;
 }
 
 @media (prefers-color-scheme: light) {
@@ -29,6 +30,7 @@
     --gradientLinearThemeStart: #e7e7e7;
     --gradientLinearThemeEnd: #1a1a1a;
     --strokeColor: #fff;
+    --buttonHoverColor: #fff;
   }
 }
 /* Тёмная сторона */
@@ -42,6 +44,7 @@
   --gradientLinearThemeStart: #007f0c;
   --gradientLinearThemeEnd: #004306;
   --strokeColor: #000;
+  --buttonHoverColor: #00cc14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -55,5 +58,6 @@
     --gradientLinearThemeStart: #007f0c;
     --gradientLinearThemeEnd: #004306;
     --strokeColor: #000;
+    --buttonHoverColor: #00cc14;
   }
 }

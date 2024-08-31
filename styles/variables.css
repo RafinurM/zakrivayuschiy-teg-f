@@ -9,5 +9,10 @@
   --accentColor: #000;
   --mainWdth: 375px;
   --strokeColor: #fff;
+
+  /* ♥ */
+  --sparks: red;
+  --heartFill: red;
+  --transparent: transparent;
 }
 
