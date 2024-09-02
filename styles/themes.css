@@ -33,6 +33,7 @@
     --buttonHoverColor: #fff;
   }
 }
+
 /* Тёмная сторона */
 
 :root.theme-dark {

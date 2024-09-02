@@ -1,0 +1,29 @@
+/* Фильтры для изображений в проекте */
+
+.image__prepare {
+  filter: contrast(140%) saturate(200%);
+}
+
+.image__begin {
+  filter: brightness(110%);
+}
+
+.image__somnenya {
+  filter: grayscale(30%);
+}
+
+.image__pogonya {
+  filter: hue-rotate(0.8turn) brightness(60%) ;
+}
+
+.image__ryadom {
+  filter: invert(100%) sepia();
+}
+
+.image__hands {
+  filter: contrast(110%) brightness(190%) ;
+}
+
+.image__now {
+  filter: brightness(120%);
+}
