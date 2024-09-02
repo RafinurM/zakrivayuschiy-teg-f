@@ -1,0 +1,37 @@
+@media (width <= 375px) {
+
+  .header {
+    max-block-size: 327px;
+  }
+
+  .header__title {
+    margin-block-start: 120px;
+  }
+
+  .header__description {
+    margin-block-start: 20px;
+  }
+
+  .footer {
+    inline-size: 310px;
+    block-size: 80px;
+  }
+
+  .save__button {
+      flex-direction: column;
+      justify-content: space-evenly;
+  }
+
+  .save__button-icon {
+    width: 28px;
+    /* margin-block-end: 15px; */
+  }
+
+  .save__button-description {
+    margin-inline-start: 0;
+  }
+
+  .dialog {
+    padding: 30px;
+  }
+}
