@@ -387,6 +387,7 @@
 
 .save__button-icon {
   width: 21px;
+  stroke: var(--accentColor);
 }
 
 .save__button:focus {
@@ -436,6 +437,7 @@
 
 .dialog__icon {
   flex-shrink: 0;
+  stroke: var(--accentColor);
 }
 
 .dialog__button {
