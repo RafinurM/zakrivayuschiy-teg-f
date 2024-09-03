@@ -65,6 +65,7 @@
   .page {
     font-family: var(--generalFont), sans-serif;
     font-weight: var(--generalFontTextWdth);
+    font-variation-settings: 'wght' var(--generalFontTextWght);
   }
 }
 
@@ -187,6 +188,7 @@
   font-family: var(--generalFont);
   font-size: 18px;
   line-height: 21.78px;
+  font-variation-settings: 'wght' var(--generalFontDisplayWght);
 }
 
 .card__image-container {
@@ -231,6 +233,7 @@
   font-weight: var(--generalFontTextWght);
   font-size: 18px;
   line-height: 21px;
+  font-variation-settings: 'wght' var(--generalFontTextWght);
 }
 
 /* Like section */

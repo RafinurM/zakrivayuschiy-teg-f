@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
     <link rel="stylesheet" href="./styles/image_filters.css" />
-    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" href="./styles/mobile.css" />
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
     <script src="./scripts/set-theme.js"></script>
   </head>
@@ -538,11 +538,21 @@
         </div>
       </section>
       <footer class="footer">
-        <button class="save__button button" type="button" onclick="window['save__dialog'].showModal()" aria-controls="save__dialog">
-          <svg class="save__button-icon" viewBox="0 0 28 28" width="28" height="28">
+        <button
+          class="save__button button"
+          type="button"
+          onclick="window['save__dialog'].showModal()"
+          aria-controls="save__dialog"
+        >
+          <svg
+            class="save__button-icon"
+            viewBox="0 0 28 28"
+            width="28"
+            height="28"
+          >
             <use href="./svg/saveFloppy.svg#saveFloppy"></use>
           </svg>
-          <p class="save__button-description">Сохранить на память</p>
+          <span class="save__button-description">Сохранить на память</span>
         </button>
       </footer>
       <dialog id="save__dialog" class="dialog">
@@ -552,7 +562,13 @@
           </svg>
           <p class="dialog-description">Вставьте дискету, чтобы продолжить</p>
         </div>
-        <button class="dialog__button button" type="button" onclick="window['save__dialog'].close()">Ок</button>
+        <button
+          class="dialog__button button"
+          type="button"
+          onclick="window['save__dialog'].close()"
+        >
+          Ок
+        </button>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>
