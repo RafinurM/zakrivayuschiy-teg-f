@@ -49,7 +49,7 @@
       </nav>
     </header>
     <main class="content">
-      <!-- <article class="card">
+      <article class="card">
         <h2 class="card__title">
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
@@ -111,8 +111,8 @@
             <span class="button__text">Like</span>
           </button>
         </div>
-      </article> -->
-      <!-- <article class="card">
+      </article>
+      <article class="card">
         <h2 class="card__title">1 спринт: Я — чистый лист</h2>
         <div class="card__image-container">
           <span class="card__image-lable">Начало</span>
@@ -481,7 +481,7 @@
             <span class="button__text">Like</span>
           </button>
         </div>
-      </article> -->
+      </article>
       <article class="card">
         <h2 class="card__title">«Сейчас я здесь»</h2>
         <div class="card__image-container">
@@ -546,26 +546,34 @@
           </button>
         </div>
       </article>
-        <button
-          class="button save__button"
-          type="button"
-          onclick="window['save__dialog'].showModal()"
-          aria-controls="save__dialog"
+      <button
+        class="button save__button"
+        type="button"
+        onclick="window['save__dialog'].showModal()"
+        aria-controls="save__dialog"
+      >
+        <svg
+          class="save__button-icon"
+          viewBox="0 0 28 28"
+          width="28"
+          height="28"
+          fill="currentColor"
         >
-          <svg
-            class="save__button-icon"
-            viewBox="0 0 28 28"
-            width="28"
-            height="28"
-            fill="currentColor"
-          >
-            <use href="./svg/saveFloppy.svg#saveFloppy"></use>
-          </svg>
-          <span class="button__text save__button-description">Сохранить на память</span>
-        </button>
+          <use href="./svg/saveFloppy.svg#saveFloppy"></use>
+        </svg>
+        <span class="button__text save__button-description"
+          >Сохранить на память</span
+        >
+      </button>
       <dialog id="save__dialog" class="dialog">
         <div class="dialog__container">
-          <svg class="dialog__icon" viewBox="0 0 28 28" width="39" height="39" fill="currentColor">
+          <svg
+            class="dialog__icon"
+            viewBox="0 0 28 28"
+            width="39"
+            height="39"
+            fill="currentColor"
+          >
             <use href="./svg/saveFloppy.svg#saveFloppy"></use>
           </svg>
           <p class="dialog-description">Вставьте дискету, чтобы продолжить</p>
@@ -575,7 +583,7 @@
           type="button"
           onclick="window['save__dialog'].close()"
         >
-        <span class="button__text">Ок</span>
+          <span class="button__text">Ок</span>
         </button>
       </dialog>
     </main>
