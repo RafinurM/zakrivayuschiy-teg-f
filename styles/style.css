@@ -14,14 +14,14 @@
 
 */
 
-/* Общие стили/повторяющиеся */
+/* Кнопка деф */
 
 .button {
   position: relative;
   border: 2px solid var(--accentColor);
   overflow: hidden;
   color: var(--accentColor);
-  font-family: var(--accentFont);
+  font-family: var(--accentFont), sans-serif;
   background-color: var(--generalBckgColor);
   transition: box-shadow 0.5s ease-in-out;
   cursor: pointer;
@@ -35,12 +35,8 @@
   box-shadow: 2px 2px 0 0 var(--accentColor);
 }
 
-.button:hover .button__text {
-  color: var(--buttonHoverColor);
-  mix-blend-mode: difference;
-}
-
 .button:hover svg.save__button-icon {
+  transition: stroke 1s linear;
   stroke: var(--buttonHoverColor);
   mix-blend-mode: difference;
 }
@@ -63,6 +59,9 @@
   z-index: 99;
   font-size: 14px;
   line-height: 12.6px;
+  transition: color 0.3s linear;
+  color: var(--buttonHoverColor);
+  mix-blend-mode: difference;
 }
 
 /* main */
@@ -114,7 +113,7 @@
   align-items: center;
   margin: 100px 0;
   border: 2px solid var(--accentColor);
-  font-family: var(--accentFont);
+  font-family: var(--accentFont), sans-serif;
   background-color: var(--generalBckgColor);
   inline-size: clamp(375px, 100%, 700px);
 }
@@ -219,7 +218,7 @@
 .card__title {
   align-self: flex-start;
   padding: 4px 10px 6px;
-  font-family: var(--generalFont);
+  font-family: var(--generalFont), sans-serif;
   font-size: 18px;
   line-height: 21.78px;
   font-variation-settings: "wght" var(--generalFontDisplayWght);
@@ -243,7 +242,7 @@
   z-index: 10;
   opacity: 0.5;
   color: var(--accentColor);
-  font-family: var(--accentFont);
+  font-family: var(--accentFont), sans-serif;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -385,8 +384,9 @@
 
 .save__button-icon {
   width: 21px;
-  stroke: var(--accentColor);
-  transition: stroke 1s;
+  stroke: var(--buttonHoverColor);
+  transition: stroke 1s 0.5s linear;
+  mix-blend-mode: difference;
 }
 
 .save__button-description {
@@ -412,7 +412,7 @@
 .dialog__container {
   margin-block-end: 30px;
   color: var(--accentColor);
-  font-family: var(--accentFont);
+  font-family: var(--accentFont, sans-serif);
   font-size: 14px;
 }
 
