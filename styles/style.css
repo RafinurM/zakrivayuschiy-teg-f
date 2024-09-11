@@ -36,8 +36,8 @@
 }
 
 .button:hover svg.save__button-icon {
-  transition: stroke 1s linear;
   stroke: var(--buttonHoverColor);
+  transition: stroke 1s linear;
   mix-blend-mode: difference;
 }
 
@@ -57,10 +57,10 @@
 .button__text {
   position: relative;
   z-index: 99;
+  color: var(--buttonHoverColor);
   font-size: 14px;
   line-height: 12.6px;
   transition: color 0.3s linear;
-  color: var(--buttonHoverColor);
   mix-blend-mode: difference;
 }
 
@@ -71,7 +71,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-block-start: 100px;
+  margin-block-end: 100px;
   color: var(--accentColor);
+  font-family: var(--generalFont), sans-serif;
   background-image: repeating-linear-gradient(
       90deg,
       var(--gradientTheme),
@@ -111,7 +114,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: 100px 0;
   border: 2px solid var(--accentColor);
   font-family: var(--accentFont), sans-serif;
   background-color: var(--generalBckgColor);
@@ -204,13 +206,14 @@
   flex-direction: column;
   align-items: center;
   gap: 52px;
+  margin-block-start: 100px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid black;
+  border: 2px solid var(--accentColor);
   background-color: var(--generalBckgColor);
   inline-size: clamp(375px, 80%, 696px);
 }
@@ -230,6 +233,8 @@
 
 .card__image {
   margin-block-end: 25px;
+  border-block-start: 2px solid var(--accentColor);
+  border-block-end: 2px solid var(--accentColor);
   object-fit: cover;
   object-position: center;
   inline-size: clamp(371px, 100%, 696px);
@@ -276,14 +281,17 @@
 .card__actions {
   display: flex;
   justify-content: flex-end;
+  gap: 5px;
   align-self: flex-end;
   margin: 20px 25px 20px;
+  block-size: 38px;
 }
 
 /* Кнопка сердечка ♥ */
 
 .card__icon-button {
   border: 2px solid transparent;
+  padding: 0;
   background-color: transparent;
   transition: border 0.3s ease;
   cursor: pointer;
@@ -312,7 +320,7 @@
 
 .heart__group {
   transform-origin: center center;
-} 
+}
 
 .card__icon-button:hover .main-body {
   fill: var(--accentColor);
@@ -376,7 +384,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-block-end: 100px;
   padding: 0;
   block-size: 54px;
   inline-size: 335px;
