@@ -23,7 +23,7 @@
   color: var(--accentColor);
   font-family: var(--accentFont), sans-serif;
   background-color: var(--generalBckgColor);
-  transition: box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.3s ease;
   cursor: pointer;
 }
 
@@ -33,12 +33,6 @@
 
 .button:focus-visible {
   box-shadow: 2px 2px 0 0 var(--accentColor);
-}
-
-.button:hover svg.save__button-icon {
-  stroke: var(--buttonHoverColor);
-  transition: stroke 1s linear;
-  mix-blend-mode: difference;
 }
 
 .button::before {
@@ -58,9 +52,9 @@
   position: relative;
   z-index: 99;
   color: var(--buttonHoverColor);
+  font-weight: var(--generalFontTextWght);
   font-size: 14px;
   line-height: 12.6px;
-  transition: color 0.3s linear;
   mix-blend-mode: difference;
 }
 
@@ -71,28 +65,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-block-start: 100px;
-  margin-block-end: 100px;
+  margin: 100px auto;
   color: var(--accentColor);
   font-family: var(--generalFont), sans-serif;
-  background-image: repeating-linear-gradient(
-      90deg,
+  background-image: repeating-linear-gradient(90deg,
       var(--gradientTheme),
       var(--gradientTheme) 2px,
       transparent 2px,
-      transparent 4px
-    ),
-    repeating-linear-gradient(
-      180deg,
+      transparent 4px),
+    repeating-linear-gradient(180deg,
       transparent,
       transparent 2px,
       var(--gradientTheme) 2px,
-      var(--gradientTheme) 4px
-    ),
-    linear-gradient(
-      var(--gradientLinearThemeStart),
-      var(--gradientLinearThemeEnd)
-    );
+      var(--gradientTheme) 4px),
+    linear-gradient(var(--gradientLinearThemeStart),
+      var(--gradientLinearThemeEnd));
   background-size: cover;
   background-attachment: fixed;
   min-inline-size: 320px;
@@ -112,25 +99,24 @@
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   border: 2px solid var(--accentColor);
   font-family: var(--accentFont), sans-serif;
   background-color: var(--generalBckgColor);
-  inline-size: clamp(375px, 100%, 700px);
+  inline-size: clamp(375px, 100%, 696px);
 }
 
 .header__title {
-  margin-block-start: 145px;
+  margin-block-start: 136px;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  line-height: 49px;
+  line-height: 65px;
   text-transform: uppercase;
 }
 
 .header__description {
-  margin-block-start: 35px;
+  margin-block-start: 20px;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-  line-height: 14px;
+  line-height: 23px;
   text-transform: uppercase;
 }
 
@@ -141,13 +127,13 @@
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin: 25px 0;
+  margin-block-start: 23px;
+  margin-block-end: 13px;
 }
 
 .theme-menu__item {
   position: relative;
-  margin-block-end: 13px;
+  padding-block-end: 12px;
 }
 
 .theme-menu__button[disabled="true"]:before {
@@ -205,7 +191,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 52px;
+  gap: 50px;
   margin-block-start: 100px;
 }
 
@@ -215,7 +201,7 @@
   align-items: center;
   border: 2px solid var(--accentColor);
   background-color: var(--generalBckgColor);
-  inline-size: clamp(375px, 80%, 696px);
+  inline-size: clamp(375px, 100%, 700px);
 }
 
 .card__title {
@@ -256,10 +242,7 @@
   mix-blend-mode: hard-light;
 }
 
-@supports (
-  (text-stroke: 1px var(--strokeColor)) or
-    (-webkit-text-stroke: 1px var(--strokeColor))
-) {
+@supports ((text-stroke: 1px var(--strokeColor)) or (-webkit-text-stroke: 1px var(--strokeColor))) {
   .card__image-lable {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--strokeColor);
@@ -315,7 +298,7 @@
 }
 
 .main-body {
-  transition: fill 0.3s 0.05s linear;
+  transition: fill 0.3s linear;
 }
 
 .heart__group {
@@ -324,7 +307,7 @@
 
 .card__icon-button:hover .main-body {
   fill: var(--accentColor);
-  transition: fill 0.3s linear;
+  transition: fill 0.3s 0.05s linear;
 }
 
 .card__icon-button:active .core {
@@ -334,7 +317,7 @@
 
 .card__icon-button:active .main-body {
   fill: var(--heartFill);
-  transition: fill 0.3s linear;
+  transition: fill 0.3s 0.05s linear;
 }
 
 /* is-liked added */
@@ -346,12 +329,12 @@
 
 .like-icon.is-liked .main-body {
   fill: var(--heartFill);
-  transition: fill 0.3s 0.06s linear;
+  transition: fill 0.3s 0.05s linear;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--heartFill);
-  transition: fill 0.3s 0.12s linear;
+  transition: fill 0.3s 0.06s linear;
 }
 
 .like-icon.is-liked .heart__group {
@@ -391,8 +374,7 @@
 
 .save__button-icon {
   width: 21px;
-  stroke: var(--buttonHoverColor);
-  transition: stroke 1s 0.5s linear;
+  color: var(--buttonHoverColor);
   mix-blend-mode: difference;
 }
 
@@ -405,10 +387,12 @@
 .dialog {
   position: fixed;
   z-index: 100;
+  margin: 0 auto;
   border: 2px solid var(--accentColor);
   padding: 30px 40px;
   background-color: var(--generalBckgColor);
-  inline-size: clamp(340px, 90%, 360px);
+  inset-block-start: calc(50% - 190px / 2);
+  inline-size: clamp(337px, 100%, 353px);
 }
 
 .dialog[open] .dialog__container {
@@ -436,6 +420,10 @@
 
 .dialog__button {
   padding: 10px 112px;
+}
+
+.dialog__button .button__text {
+  text-transform: uppercase;
 }
 
 .dialog::backdrop {
