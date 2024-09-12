@@ -386,7 +386,6 @@
 .dialog {
   position: fixed;
   z-index: 100;
-  margin: 0 auto;
   border: 2px solid var(--accentColor);
   padding: 30px 40px;
   background-color: var(--generalBckgColor);
