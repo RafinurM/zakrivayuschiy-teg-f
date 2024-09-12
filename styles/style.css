@@ -198,7 +198,6 @@
 .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
   border: 2px solid var(--accentColor);
   background-color: var(--generalBckgColor);
   inline-size: clamp(375px, 100%, 700px);
@@ -218,7 +217,7 @@
 }
 
 .card__image {
-  margin-block-end: 25px;
+  margin-block-end: 20px;
   border-block-start: 2px solid var(--accentColor);
   border-block-end: 2px solid var(--accentColor);
   object-fit: cover;
@@ -228,8 +227,8 @@
 
 .card__image-lable {
   position: absolute;
-  top: 23px;
-  right: 10px;
+  top: 25px;
+  right: 25px;
   z-index: 10;
   opacity: 0.5;
   color: var(--accentColor);
@@ -251,7 +250,7 @@
 }
 
 .card__description {
-  margin: 0 26.95px 25px 25px;
+  margin: 0 25px 25px 25px;
   font-family: var(--generalFont), sans-serif;
   font-weight: var(--generalFontTextWght);
   font-size: 18px;
@@ -266,7 +265,7 @@
   justify-content: flex-end;
   gap: 5px;
   align-self: flex-end;
-  margin: 20px 25px 20px;
+  margin: 0 25px 25px;
   block-size: 38px;
 }
 
@@ -391,7 +390,8 @@
   border: 2px solid var(--accentColor);
   padding: 30px 40px;
   background-color: var(--generalBckgColor);
-  inset-block-start: calc(50% - 190px / 2);
+  inset: 0;
+  margin: auto;
   inline-size: clamp(337px, 100%, 353px);
 }
 
@@ -420,6 +420,7 @@
 
 .dialog__button {
   padding: 10px 112px;
+  inline-size: 100%;
 }
 
 .dialog__button .button__text {
